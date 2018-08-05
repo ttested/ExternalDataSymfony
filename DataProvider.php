@@ -1,0 +1,30 @@
+<?php
+namespace src\Integration;
+ 
+class DataProvider
+{
+    private $host;
+    private $user;
+    private $password;
+ 
+    /**
+	* @param string $host
+	* @param string $user
+	* @param string $password
+	*/
+    public function __construct($host, $user, $password)
+    {
+        $this->host = $host;
+        $this->user = $user;
+        $this->password = $password;
+    }
+   
+    /**
+	* @param array $request
+	* @return array
+	*/
+    public function get(array $request):array 
+    {
+        // returns a response from external service
+    }
+}
